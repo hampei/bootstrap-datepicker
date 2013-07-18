@@ -792,6 +792,7 @@
 						}
 						break;
 				}
+				this.element.focus();
 			}
 		},
 
@@ -935,10 +936,12 @@
 					break;
 				case 13: // enter
 					this.hide();
+					dateChanged = true;
 					e.preventDefault();
 					break;
 				case 9: // tab
 					this.hide();
+					dateChanged = true;
 					break;
 			}
 			if (dateChanged){
